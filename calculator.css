@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00AAFF, #ff3c3c);
+}
+
+h1{
+    width: 30%;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+    color: white;
+}
+
+#calculator_container{
+    width: 30%;
+    height: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    padding: 1px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px 2px rgb(222, 255, 146);
+}
+
+#calculator_display{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+#priview{
+    width: 100%;
+    height: 40%;
+    /* margin-bottom: 2px; */
+    /* background-color: rgb(235 179 220); */
+    background-color: rgb(0 0 0 / 75%);
+}
+
+#result{
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding: 2px;
+    /* background-color: rgb(43 255 157); */
+    background-color: rgb(0 0 0 / 75%);
+}
+
+p{
+    text-align: right;
+    margin-right: 2%;
+    font-size: x-large;
+    margin-block-start: 18px;
+    margin-block-end: 0px;
+    color: white;
+}
+#display_priview{
+    font-size: large;
+    margin-block-start: 9px;
+
+}
+
+
+#bottun_container{
+    width: 100%;
+    height: 75%;
+    margin-top: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: whitesmoke; */
+    justify-content: space-around;
+}
+
+.button{
+    width: 24.5%;
+    height: 19.5%;
+    border: 1px solid wheat;
+    text-align: center;
+    background-color: cyan;
+    padding-top: 4%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+.button:hover{
+    background-color: rgb(178, 252, 252);
+
+}
+.button span{
+    font-size: 1.4rem;
+}
+#button-zero{
+    width: 49%;
+}
+#button-clear{
+    width: 49%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###### for responsiveness ######## */
+@media (max-width:1000px){
+    #calculator_container{
+        width: 35%;
+    }
+}
+
+@media (max-width:900px){
+    #calculator_container{
+        width: 42%;
+    }
+}
+
+@media (max-width:750px){
+    #calculator_container{
+        width: 50%;
+    }
+}
+@media (max-width:600px){
+    #calculator_container{
+        width: 65%;
+    }
+}
